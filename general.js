@@ -32,7 +32,7 @@ $(window).scroll(function () {
 });
 
 //accoedion BEGIN
-$(".accordion__title").on("click", function(e) {
+$(".accordion__title").on("click", function (e) {
 
    e.preventDefault();
    var $this = $(this);
@@ -45,7 +45,41 @@ $(".accordion__title").on("click", function(e) {
 
    $this.toggleClass("accordion-active");
    $this.next().slideToggle();
-   $('.accordion__arrow',this).toggleClass('accordion__rotate');
+   $('.accordion__arrow', this).toggleClass('accordion__rotate');
 });
 //END
+
+//mobile navigation
+$(document).ready(function () {
+   $(".navbtn .togglebtn").click(function () {
+      if ($(window).width() < 992) {
+         $(this).toggleClass("on");
+         $('.bottom_header').slideToggle("on");
+      }
+   });
+   $(window).resize(function () {
+      if ($(window).width() > 992) {
+         $('.bottom_header').addClass('desknav').attr('style', '');
+         $(".navbtn .togglebtn").removeClass('on');
+      } else {
+         $('.bottom_header').removeClass('desknav');
+      };
+   });
+});
+
+$('.bottom_header ul li').click(function () {
+   if ($(window).width() < 992) {
+      $('.bottom_header').slideUp();
+      $('.navbtn .togglebtn').removeClass('on');
+   }
+});
+
+/* contact form */
+$('.contactform').submit(function (e) {
+   e.preventDefault();
+   var name = $("input[name='name']").val();
+   var phone = $("input[name='phone']").val();
+   var msg = $("input[name='text']").val();
+   console.log($(this).serializeArray());
+});
 

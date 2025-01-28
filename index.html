@@ -2,33 +2,33 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>HTML Project view</title>
    <link rel="stylesheet" href="./normalize.css" />
    <link rel="stylesheet" href="./style.css" />
    <link rel="stylesheet" href="./assets/css/fontawesome.css" />
    <link rel="stylesheet" href="./assets/css/animate.css" />
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
    <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;700&display=swap"
-      rel="stylesheet">
+      rel="stylesheet" />
 </head>
 
 <body>
    <!-- header -->
    <header>
       <div class="container">
-         <div class="top_header df wow fadeIn" data-wow-delay="0s">
+         <div class="top_header df">
             <div class="sitelogo df wow bounceInDown" data-wow-delay="0.2s">
-               <img src="./img/sitelogo.png" alt="">
+               <img src="./img/sitelogo.png" alt="" />
             </div>
-            <div class="headcontact ">
+            <div class="headcontact">
                <ul class="df nolist">
-                  <li class=" df wow bounceInLeft" data-wow-delay="0.4s">
+                  <li class="df wow bounceInLeft" data-wow-delay="0.4s">
                      <a href="tel:+12345678900" class="df">
                         <span class="ctaico df"><i class="fa-regular fa-clock"></i></span>
                         <div class="headct_info">
@@ -37,7 +37,7 @@
                         </div>
                      </a>
                   </li>
-                  <li class=" df wow bounceInLeft" data-wow-delay="0.6s">
+                  <li class="df wow bounceInLeft" data-wow-delay="0.6s">
                      <a href="mailto:free@psdfreebies.com" class="df">
                         <span class="ctaico df"><i class="fa-solid fa-envelope"></i></span>
                         <div class="headct_info">
@@ -46,7 +46,7 @@
                         </div>
                      </a>
                   </li>
-                  <li class=" df wow bounceInLeft" data-wow-delay="0.8s">
+                  <li class="df wow bounceInLeft" data-wow-delay="0.8s">
                      <a href="tel:+12345678900" class="df">
                         <span class="ctaico df"><i class="fa-solid fa-mobile-screen-button"></i></span>
                         <div class="headct_info">
@@ -58,7 +58,10 @@
                </ul>
             </div>
          </div>
-         <div class="bottom_header df wow bounceInUp" data-wow-delay="1s">
+         <div class="navbtn">
+            <a id="toggle" class="togglebtn"><span></span></a>
+         </div>
+         <div class="bottom_header df wow fadeInUp" data-wow-delay="1s">
             <nav>
                <ul class="df nolist">
                   <li><a href="/">Home</a></li>
@@ -71,11 +74,21 @@
             </nav>
             <div class="socials">
                <ul class="df nolist">
-                  <li><a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                  <li><a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                  <li><a href="#" title="vk"><i class="fa-brands fa-vk"></i></a></li>
-                  <li><a href="#" title="youtube"><i class="fa-brands fa-youtube"></i></a></li>
-                  <li><a href="#" title="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  <li>
+                     <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                     <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                     <a href="#" title="vk"><i class="fa-brands fa-vk"></i></a>
+                  </li>
+                  <li>
+                     <a href="#" title="youtube"><i class="fa-brands fa-youtube"></i></a>
+                  </li>
+                  <li>
+                     <a href="#" title="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
                </ul>
             </div>
          </div>
@@ -83,14 +96,16 @@
    </header>
    <main>
       <!-- banner -->
-      <section class="banner por  wow slideInLeft" data-wow-delay="1.3s">
-         <div class="bnrbg"><img src="./img/banner.jpg" alt="" class="objbg"></div>
+      <section class="banner por wow slideInLeft" data-wow-delay="1.3s">
+         <div class="bnrbg">
+            <img src="./img/banner.jpg" alt="" class="objbg" />
+         </div>
          <div class="container">
             <div class="bnr_info text-center df">
-               <h1 class="wow bounceInUp" data-wow-delay="1.5s">We have Best Medicare plan options for you</h1>
-               <p class="wow bounceInUp" data-wow-delay="1.7s">Sed ut perspiciatis unde omnis iste natus error sit
+               <h1 class="wow fadeInUp" data-wow-delay="1.5s">We have Best Medicare plan options for you</h1>
+               <p class="wow fadeInUp" data-wow-delay="1.7s">Sed ut perspiciatis unde omnis iste natus error sit
                   voluptatem accusantium doloremque laudantium.</p>
-               <div class="bnrbtn w100 text-center wow bounceInUp" data-wow-delay="1.9s">
+               <div class="bnrbtn w100 text-center wow fadeInUp" data-wow-delay="1.9s">
                   <form action="https://fontawesome.com/search?q=linked%20in&o=r">
                      <button class="btn uppercase">Read more</button>
                   </form>
@@ -100,29 +115,37 @@
       </section>
 
       <!-- services -->
-      <section class="services  df wow fadeIn" data-wow-delay="0.3s" id="services">
+      <section class="services df wow fadeIn" data-wow-delay="0.3s" id="services">
          <div class="container">
             <div class="servicebox grid">
                <div class="serviceitem por text-center wow slideInLeft" data-wow-delay="0.5s">
-                  <div class="serveicon df"><img src="./img/best_trit.png" alt=""></div>
+                  <div class="serveicon df">
+                     <img src="./img/best_trit.png" alt="" />
+                  </div>
                   <h3>Best Treatment</h3>
                   <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                   </p>
                </div>
                <div class="serviceitem por text-center wow slideInLeft" data-wow-delay="0.8s">
-                  <div class="serveicon df"><img src="./img/emargencyHelp.png" alt=""></div>
+                  <div class="serveicon df">
+                     <img src="./img/emargencyHelp.png" alt="" />
+                  </div>
                   <h3>Emergency Help</h3>
                   <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                   </p>
                </div>
                <div class="serviceitem por text-center wow slideInLeft" data-wow-delay="1s">
-                  <div class="serveicon df"><img src="./img/medicalStaff.png" alt=""></div>
+                  <div class="serveicon df">
+                     <img src="./img/medicalStaff.png" alt="" />
+                  </div>
                   <h3>Medical Staff</h3>
                   <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                   </p>
                </div>
                <div class="serviceitem por text-center wow slideInLeft" data-wow-delay="1.3s">
-                  <div class="serveicon df"><img src="./img/qulifiedico.png" alt=""></div>
+                  <div class="serveicon df">
+                     <img src="./img/qulifiedico.png" alt="" />
+                  </div>
                   <h3>Qualified Doctors</h3>
                   <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                   </p>
@@ -134,18 +157,20 @@
       <!-- Blog -->
       <section class="whyus secspace" id="blog">
          <div class="container">
-            <div class="whyusbox">
-               <div class="top_txt text-center wow bounceInUp" data-wow-delay="0.2s">
+            <div class="whyusbox ">
+               <div class="top_txt text-center wow fadeInUp" data-wow-delay="0.2s">
                   <h2>Why Choose Us ?</h2>
                   <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
                      totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                     dicta sunt explicabo. </p>
+                     dicta sunt explicabo.</p>
                </div>
                <div class="whyusinfo grid">
                   <div class="whyusinfocol">
                      <div class="whyustxtitem wow slideInLeft" data-wow-delay="0.5s">
                         <div class="whyusitem_title df">
-                           <div class="whyusitem_icon"><img src="./img/whyoneico.png" alt=""></div>
+                           <div class="whyusitem_icon">
+                              <img src="./img/whyoneico.png" alt="" />
+                           </div>
                            <h3>Professional</h3>
                         </div>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
@@ -153,7 +178,9 @@
                      </div>
                      <div class="whyustxtitem wow slideInLeft" data-wow-delay="0.8s">
                         <div class="whyusitem_title df">
-                           <div class="whyusitem_icon"><img src="./img/whytwo.png" alt=""></div>
+                           <div class="whyusitem_icon">
+                              <img src="./img/whytwo.png" alt="" />
+                           </div>
                            <h3>Professional</h3>
                         </div>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
@@ -161,13 +188,16 @@
                      </div>
                   </div>
                   <div class="whyusinfocol df por">
-                     <div class="whyladybox wow bounceInUp" data-wow-delay="0.5s"><img src="./img/whylady.png" alt="">
+                     <div class="whyladybox wow fadeInUp" data-wow-delay="0.5s">
+                        <img src="./img/whylady.png" alt="" />
                      </div>
                   </div>
-                  <div class="whyusinfocol">
+                  <div class="whyusinfocol mobanimhide">
                      <div class="whyustxtitem wow slideInRight" data-wow-delay="0.5s">
                         <div class="whyusitem_title df">
-                           <div class="whyusitem_icon"><img src="./img/whythree.png" alt=""></div>
+                           <div class="whyusitem_icon">
+                              <img src="./img/whythree.png" alt="" />
+                           </div>
                            <h3>Professional</h3>
                         </div>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
@@ -175,7 +205,9 @@
                      </div>
                      <div class="whyustxtitem wow slideInRight" data-wow-delay="0.8s">
                         <div class="whyusitem_title df">
-                           <div class="whyusitem_icon"><img src="./img/whyfoure.png" alt=""></div>
+                           <div class="whyusitem_icon">
+                              <img src="./img/whyfoure.png" alt="" />
+                           </div>
                            <h3>Professional</h3>
                         </div>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
@@ -189,36 +221,54 @@
 
       <!-- counter  -->
       <section class="counter por secspace">
-         <div class="counterbg"><img src="./img/counterbg.jpg" alt="" class="objbg"></div>
+         <div class="counterbg">
+            <img src="./img/counterbg.jpg" alt="" class="objbg" />
+         </div>
          <div class="container">
             <div class="counterbox grid" id="counter">
-               <div class="counteritem text-center wow bounceInUp" data-wow-delay="0.2s">
-                  <figure class="df"><img src="./img/counterone.png" alt=""></figure>
-                  <div class="countervaluebox">
-                     <span class="counter-value" data-count="1000">500</span>+
-                  </div>
-                  <h4> Happy <br /> Customers</h4>
+               <div class="counteritem text-center wow fadeInUp" data-wow-delay="0.2s">
+                  <figure class="df">
+                     <img src="./img/counterone.png" alt="" />
+                  </figure>
+                  <div class="countervaluebox"><span class="counter-value" data-count="1000">500</span>+</div>
+                  <h4>
+                     Happy <br />
+                     Customers
+                  </h4>
                </div>
                <div class="counteritem text-center wow bounceInDown" data-wow-delay="0.4s">
-                  <figure class="df"><img src="./img/countertwo.png" alt=""></figure>
+                  <figure class="df">
+                     <img src="./img/countertwo.png" alt="" />
+                  </figure>
                   <div class="countervaluebox">
                      <span class="counter-value" data-count="2017">1500</span>
                   </div>
-                  <h4> Top <br /> Hospitality</h4>
+                  <h4>
+                     Top <br />
+                     Hospitality
+                  </h4>
                </div>
-               <div class="counteritem text-center wow bounceInUp" data-wow-delay="0.2s">
-                  <figure class="df"><img src="./img/counterthree.png" alt=""></figure>
+               <div class="counteritem text-center wow fadeInUp" data-wow-delay="0.2s">
+                  <figure class="df">
+                     <img src="./img/counterthree.png" alt="" />
+                  </figure>
                   <div class="countervaluebox">
                      <span class="counter-value" data-count="1105">500</span>
                   </div>
-                  <h4> Innovative<br /> Approach</h4>
+                  <h4>
+                     Innovative<br />
+                     Approach
+                  </h4>
                </div>
                <div class="counteritem text-center wow bounceInDown" data-wow-delay="0.4s">
-                  <figure class="df"><img src="./img/counterfoure.png" alt=""></figure>
-                  <div class="countervaluebox">
-                     <span class="counter-value" data-count="500">100</span>+
-                  </div>
-                  <h4> Lung <br /> Replacement</h4>
+                  <figure class="df">
+                     <img src="./img/counterfoure.png" alt="" />
+                  </figure>
+                  <div class="countervaluebox"><span class="counter-value" data-count="500">100</span>+</div>
+                  <h4>
+                     Lung <br />
+                     Replacement
+                  </h4>
                </div>
             </div>
          </div>
@@ -229,7 +279,7 @@
          <div class="container">
             <div class="aboutbox df">
                <div class="aboutwork">
-                  <div class="abtworktop wow bounceInUp" data-wow-delay="0.2s">
+                  <div class="abtworktop wow fadeInUp" data-wow-delay="0.2s">
                      <h2>How we works</h2>
                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                         laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
@@ -238,9 +288,9 @@
                   <div class="abtworkmedia grid">
                      <div class="abtwork_item wow fadeIn" data-wow-delay="1s">
                         <figure class="por">
-                           <img src="./img/howworkone.jpg" alt="" class="objbg">
+                           <img src="./img/howworkone.jpg" alt="" class="objbg" />
                         </figure>
-                        <h6>Lorem ipsum dolor sit amet, </h6>
+                        <h6>Lorem ipsum dolor sit amet,</h6>
                         <ul class="datename">
                            <li>April 19, 2017</li>
                            <li>Dr. Jon Doe</li>
@@ -250,9 +300,9 @@
                      </div>
                      <div class="abtwork_item wow fadeIn" data-wow-delay="1.2s">
                         <figure class="por">
-                           <img src="./img/howwetwo.jpg" alt="" class="objbg">
+                           <img src="./img/howwetwo.jpg" alt="" class="objbg" />
                         </figure>
-                        <h6>Lorem ipsum dolor sit amet, </h6>
+                        <h6>Lorem ipsum dolor sit amet,</h6>
                         <ul class="datename">
                            <li>April 19, 2017</li>
                            <li>Dr. Jon Doe</li>
@@ -261,32 +311,34 @@
                            laudantium.</p>
                      </div>
                   </div>
-                  <div class="atworkbtn text-center wow bounceInUp" data-wow-delay="1.4s">
+                  <div class="atworkbtn text-center wow fadeInUp" data-wow-delay="1.4s">
                      <button class="btn">Read more</button>
                   </div>
                </div>
-               <div class="atcreative wow bounceInUp" data-wow-delay="0.2s">
+               <div class="atcreative wow fadeInUp" data-wow-delay="0.2s">
                   <h2>Our creative</h2>
                   <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                      laudantium.Sed ut perspiciatis unde omnis iste natus error laudantium.</p>
 
                   <div class="accordion">
-                     <div class="accordion__item  wow bounceInUp" data-wow-delay="0.4s">
+                     <div class="accordion__item wow fadeInUp" data-wow-delay="0.4s">
                         <div class="accordion__title accordion-active">
-                           <div class="accordion__arrow  accordion__rotate">
-                              <span class="accordion__arrow-item ">+</span>
+                           <div class="accordion__arrow accordion__rotate">
+                              <span class="accordion__arrow-item">+</span>
                            </div>
                            <h6 class="accordion__title-text">Heart Treatment</h6>
                         </div>
-                        <div class="accordion__content" style="display: block;">
+                        <div class="accordion__content" style="display: block">
                            <p>Sed ut perspiciatis unde omnis iste natus error s.it voluptatem accusantium doloremque
                               laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                               doloremque laudantium.</p>
                         </div>
                      </div>
-                     <div class="accordion__item  wow bounceInUp" data-wow-delay="0.6s">
+                     <div class="accordion__item wow fadeInUp" data-wow-delay="0.6s">
                         <div class="accordion__title">
-                           <div class="accordion__arrow"><span class="accordion__arrow-item ">+</span></div>
+                           <div class="accordion__arrow">
+                              <span class="accordion__arrow-item">+</span>
+                           </div>
                            <h6 class="accordion__title-text">Heart Treatment</h6>
                         </div>
                         <div class="accordion__content">
@@ -295,9 +347,11 @@
                               doloremque laudantium.</p>
                         </div>
                      </div>
-                     <div class="accordion__item  wow bounceInUp" data-wow-delay="0.8s">
+                     <div class="accordion__item wow fadeInUp" data-wow-delay="0.8s">
                         <div class="accordion__title">
-                           <div class="accordion__arrow"><span class="accordion__arrow-item ">+</span></div>
+                           <div class="accordion__arrow">
+                              <span class="accordion__arrow-item">+</span>
+                           </div>
                            <h6 class="accordion__title-text">Heart Treatment</h6>
                         </div>
                         <div class="accordion__content">
@@ -306,9 +360,11 @@
                               doloremque laudantium.</p>
                         </div>
                      </div>
-                     <div class="accordion__item  wow bounceInUp" data-wow-delay="1s">
+                     <div class="accordion__item wow fadeInUp" data-wow-delay="1s">
                         <div class="accordion__title">
-                           <div class="accordion__arrow"><span class="accordion__arrow-item ">+</span></div>
+                           <div class="accordion__arrow">
+                              <span class="accordion__arrow-item">+</span>
+                           </div>
                            <h6 class="accordion__title-text">Heart Treatment</h6>
                         </div>
                         <div class="accordion__content">
@@ -325,31 +381,33 @@
 
       <!-- gallery -->
       <section class="gallery secspace por" id="gallery">
-         <div class="gallerybg"><img src="./img/gallerybg.jpg" alt="" class="objbg"></div>
+         <div class="gallerybg">
+            <img src="./img/gallerybg.jpg" alt="" class="objbg" />
+         </div>
          <div class="container">
-            <div class="top_txt text-center wow bounceInUp" data-wow-delay="0.2s">
+            <div class="top_txt text-center wow fadeInUp" data-wow-delay="0.2s">
                <h2>Gallery</h2>
                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed
                   ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
             </div>
             <div class="gallerybox grid">
-               <div class="galleryitem aspimg wow bounceInUp" data-wow-delay="0.4s">
-                  <img src="./img/galleryone.jpg" alt="" class="objimg">
+               <div class="galleryitem aspimg wow fadeInUp" data-wow-delay="0.4s">
+                  <img src="./img/galleryone.jpg" alt="" class="objimg" />
                </div>
-               <div class="galleryitem aspimg wow bounceInUp" data-wow-delay="0.6s">
-                  <img src="./img/gallerytwo.jpg" alt="" class="objimg">
+               <div class="galleryitem aspimg wow fadeInUp" data-wow-delay="0.6s">
+                  <img src="./img/gallerytwo.jpg" alt="" class="objimg" />
                </div>
-               <div class="galleryitem aspimg wow bounceInUp" data-wow-delay="0.8s">
-                  <img src="./img/gallerthree.jpg" alt="" class="objimg">
+               <div class="galleryitem aspimg wow fadeInUp" data-wow-delay="0.8s">
+                  <img src="./img/gallerthree.jpg" alt="" class="objimg" />
                </div>
-               <div class="galleryitem aspimg wow bounceInUp" data-wow-delay="1s">
-                  <img src="./img/gallerfour.jpg" alt="" class="objimg">
+               <div class="galleryitem aspimg wow fadeInUp" data-wow-delay="1s">
+                  <img src="./img/gallerfour.jpg" alt="" class="objimg" />
                </div>
-               <div class="galleryitem aspimg wow bounceInUp" data-wow-delay="1.2s">
-                  <img src="./img/galleryfive.jpg" alt="" class="objimg">
+               <div class="galleryitem aspimg wow fadeInUp" data-wow-delay="1.2s">
+                  <img src="./img/galleryfive.jpg" alt="" class="objimg" />
                </div>
-               <div class="galleryitem aspimg wow bounceInUp" data-wow-delay="1.4s">
-                  <img src="./img/gallerysix.jpg" alt="" class="objimg">
+               <div class="galleryitem aspimg wow fadeInUp" data-wow-delay="1.4s">
+                  <img src="./img/gallerysix.jpg" alt="" class="objimg" />
                </div>
             </div>
          </div>
@@ -358,65 +416,89 @@
       <!-- team -->
       <section class="team secspace text-center">
          <div class="container">
-            <div class="top_txt text-center wow bounceInUp" data-wow-delay="0.2s">
+            <div class="top_txt text-center wow fadeInUp" data-wow-delay="0.2s">
                <h2>Our Team</h2>
                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed
                   ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
             </div>
             <div class="teambox grid">
-               <div class="teamitem  text-center wow bounceInUp" data-wow-delay="0.4s">
+               <div class="teamitem text-center wow fadeInUp" data-wow-delay="0.4s">
                   <figure class="por aspimg">
-                     <img src="./img/teamone.png" alt="" class="objimg">
+                     <img src="./img/teamone.png" alt="" class="objimg" />
                   </figure>
                   <h4>Dr Ricky Doe</h4>
                   <p>Assistant Surgeon</p>
                   <div class="socials">
                      <ul class="df nolist">
-                        <li><a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#" title="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li>
+                           <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                           <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                           <a href="#" title="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
                      </ul>
                   </div>
                </div>
-               <div class="teamitem  text-center wow bounceInUp" data-wow-delay="0.6s">
+               <div class="teamitem text-center wow fadeInUp" data-wow-delay="0.6s">
                   <figure class="por aspimg">
-                     <img src="./img/teamtwo.png" alt="" class="objimg">
+                     <img src="./img/teamtwo.png" alt="" class="objimg" />
                   </figure>
                   <h4>Dr Ricky Doe</h4>
                   <p>Assistant Surgeon</p>
                   <div class="socials">
                      <ul class="df nolist">
-                        <li><a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#" title="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li>
+                           <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                           <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                           <a href="#" title="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
                      </ul>
                   </div>
                </div>
-               <div class="teamitem  text-center wow bounceInUp" data-wow-delay="0.8s">
+               <div class="teamitem text-center wow fadeInUp" data-wow-delay="0.8s">
                   <figure class="por aspimg">
-                     <img src="./img/teamthree.png" alt="" class="objimg">
+                     <img src="./img/teamthree.png" alt="" class="objimg" />
                   </figure>
                   <h4>Dr Ricky Doe</h4>
                   <p>Assistant Surgeon</p>
                   <div class="socials">
                      <ul class="df nolist">
-                        <li><a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#" title="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li>
+                           <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                           <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                           <a href="#" title="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
                      </ul>
                   </div>
                </div>
-               <div class="teamitem  text-center wow bounceInUp" data-wow-delay="1s">
+               <div class="teamitem text-center wow fadeInUp" data-wow-delay="1s">
                   <figure class="por aspimg">
-                     <img src="./img/teamfour.png" alt="" class="objimg">
+                     <img src="./img/teamfour.png" alt="" class="objimg" />
                   </figure>
                   <h4>Dr Ricky Doe</h4>
                   <p>Assistant Surgeon</p>
                   <div class="socials">
                      <ul class="df nolist">
-                        <li><a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#" title="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li>
+                           <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                           <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                           <a href="#" title="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
                      </ul>
                   </div>
                </div>
@@ -425,7 +507,7 @@
       </section>
 
       <!-- cta -->
-      <section class="ctabox secspace  wow fadeIn" data-wow-delay="0.3s">
+      <section class="ctabox secspace wow fadeIn" data-wow-delay="0.3s">
          <div class="container">
             <div class="ctaboxin">
                <h3>New Patient Special Offer Complimentary Consultation</h3>
@@ -444,20 +526,18 @@
                      <li>
                         <div class="ftrmail df">
                            <div class="ftrico">
-                              <img src="./img/messagebox.png" alt="">
+                              <img src="./img/messagebox.png" alt="" />
                            </div>
                            <p class="ftrtouchinfo">
-                              <a href="mailto:free@psdfreebies.com">free@psdfreebies.com
-                              </a>
-                              <a href="mailto:free@psdfreebies.com">free@psdfreebies.com
-                              </a>
+                              <a href="mailto:free@psdfreebies.com">free@psdfreebies.com </a>
+                              <a href="mailto:free@psdfreebies.com">free@psdfreebies.com </a>
                            </p>
                         </div>
                      </li>
                      <li>
                         <div class="ftrcall df">
                            <div class="ftrico">
-                              <img src="./img/mobileno.png" alt="">
+                              <img src="./img/mobileno.png" alt="" />
                            </div>
                            <p class="ftrtouchinfo">
                               <a href="mailto:+1234567890">+123 456 7890</a>
@@ -468,11 +548,9 @@
                      <li>
                         <div class="ftrlocation df">
                            <div class="ftrico">
-                              <img src="./img/address.png" alt="">
+                              <img src="./img/address.png" alt="" />
                            </div>
-                           <address class="ftrtouchinfo">
-                              123, Main Road, New City, My Country 123456
-                           </address>
+                           <address class="ftrtouchinfo">123, Main Road, New City, My Country 123456</address>
                         </div>
                      </li>
                   </ul>
@@ -500,15 +578,16 @@
                </div>
                <div class="footercol ftrenquery">
                   <h5>Enquiry Form</h5>
-                  <form action="">
+                  <form class="contactform">
                      <div class="form-group">
-                        <input type="text" class="form-input" placeholder="Name" />
+                        <input name="name" type="text" class="form-input" placeholder="Name" required />
                      </div>
                      <div class="form-group">
-                        <input type="text" class="form-input" placeholder="Phone" />
+                        <input name="phone" type="text" class="form-input" placeholder="Phone" required />
                      </div>
                      <div class="form-group">
-                        <textarea type="text" class="form-input" rows="4" cols="20" placeholder="Message"></textarea>
+                        <textarea name="text" type="text" class="form-input" rows="4" cols="20"
+                           placeholder="Message"></textarea>
                      </div>
                      <div class="form-group">
                         <button type="submit" class="btn">Submit</button>
@@ -519,27 +598,32 @@
             <div class="footersocial">
                <div class="socials">
                   <ul class="df nolist">
-                     <li><a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                     <li><a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                     <li><a href="#" title="vk"><i class="fa-brands fa-vk"></i></a></li>
-                     <li><a href="#" title="youtube"><i class="fa-brands fa-youtube"></i></a></li>
-                     <li><a href="#" title="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                     <li>
+                        <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                     </li>
+                     <li>
+                        <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                     </li>
+                     <li>
+                        <a href="#" title="vk"><i class="fa-brands fa-vk"></i></a>
+                     </li>
+                     <li>
+                        <a href="#" title="youtube"><i class="fa-brands fa-youtube"></i></a>
+                     </li>
+                     <li>
+                        <a href="#" title="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                     </li>
                   </ul>
                </div>
             </div>
          </div>
-
       </footer>
       <div class="copyright text-center">
          <div class="container">
             <p>Copyright © 2017. Best PSD Template for Portfolio sample Design</p>
          </div>
       </div>
-
-
    </main>
-
-
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
    <script src="./assets/js/wow.min.js"></script>
